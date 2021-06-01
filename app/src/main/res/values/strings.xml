@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food Lover</string>
+    <string name="editText_hint"><font size="12">(bastante doce, bastante pesado, picante, etc.)</font></string>
+
+</resources>

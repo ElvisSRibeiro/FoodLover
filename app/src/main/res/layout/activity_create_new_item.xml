@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewItemActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nome_PratoCulinario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Prato Culinário:"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_nome_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_text_nome_item"
+        app:layout_constraintEnd_toStartOf="@id/edit_text_nome_item"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_nome_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nome_PratoCulinario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_avaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="26dp"
+        android:text="Como me senti após:"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_avaliacao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editText_avaliacao"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_nome_item" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText_avaliacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_avaliacao"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_nome_item" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Descrição do prato:"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_descricao"
+        app:layout_constraintEnd_toStartOf="@id/editText_descricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_avaliacao" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editText_descricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_descricao"
+        app:layout_constraintTop_toBottomOf="@id/editText_avaliacao"
+        android:hint="@string/editText_hint"
+        />
+
+    <Button
+        android:id="@+id/button_salvar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="Salvar"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
