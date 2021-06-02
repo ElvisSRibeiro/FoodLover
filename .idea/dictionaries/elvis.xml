@@ -2,6 +2,9 @@
   <dictionary name="elvis">
     <words>
       <w>avaliacao</w>
+      <w>cardavaliacao</w>
+      <w>carddescricao</w>
+      <w>cardnome</w>
       <w>descricao</w>
     </words>
   </dictionary>
